@@ -3,13 +3,13 @@ ofxSuperColliderBoot
 
 Start Supercollider https://github.com/supercollider/supercollider in a Openframeworks app without run any editor (scel, sced or emacs) to boot the server. Just run the script and sclang will start and after your app. The script is a starting point, customize it to your owns. Tested in linux64 with OF 008
 
-instructions
+Instructions
 ============
 in testApp.h
 
 add the ofxSCexit header
 
-> #include "ofxSCexit.h"
+>  #include "ofxSCexit.h"
 
 and the object
 
