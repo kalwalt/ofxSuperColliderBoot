@@ -1,7 +1,7 @@
 ofxSuperColliderBoot
 ====================
 
-Start Supercollider in a Openframeworks app without run any editor (scel, sced or emacs) to boot the server. Just run the script and sclang will start and after your app. The script is a starting point, customize it to your owns. Tested in linux64 with OF 008
+Start Supercollider https://github.com/supercollider/supercollider in a Openframeworks app without run any editor (scel, sced or emacs) to boot the server. Just run the script and sclang will start and after your app. The script is a starting point, customize it to your owns. Tested in linux64 with OF 008
 
 instructions
 ============
@@ -9,7 +9,7 @@ in testApp.h
 
 add the ofxSCexit header
 
->#include "ofxSCexit.h"
+> #include "ofxSCexit.h"
 
 and the object
 
@@ -25,6 +25,11 @@ Add in testApp::exit()
 Addons needed
 -------------
 
-OfxSuperCollider, ofxOsc
+ofxSuperCollider, ofxOsc
+
+ofxSuperCollider addon in google code (but no updates from 2010):
+
+>svn checkout 
+http://ofxsupercollider.googlecode.com/svn/trunk/ofxSuperCollider
 
 
