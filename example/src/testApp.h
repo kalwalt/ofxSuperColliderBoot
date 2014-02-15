@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxSuperCollider.h"
+#include "ofxSCexit.h"
 
 class testApp : public ofBaseApp{
 
@@ -22,7 +23,6 @@ class testApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 		ofxSCSynth *synth;
-		ofxSCServer *server;
-		ofxOscMessage msg;
+		ofxSCexit sc;
 
 };

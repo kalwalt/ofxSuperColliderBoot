@@ -1,2 +1,3 @@
 ofxOsc
 ofxSuperCollider
+ofxSuperColliderBoot

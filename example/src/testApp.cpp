@@ -4,10 +4,7 @@
 void testApp::setup(){
         ofSetLogLevel(OF_LOG_VERBOSE);
 
-///create an osc message (/boot) to send to the Server to boot the Server
-        msg.setAddress("/boot");
-        server = new ofxSCServer("localhost", 57110);
-        server->sendMsg(msg);
+
 
 ///we create a simple sine synth
 
@@ -20,7 +17,7 @@ void testApp::setup(){
         float phase;
         float movedDim;
         soundSpeed = notes[num%4] * base[num%6] * pow(1.5, 1.0+int(num/16.0));
-        synth = new ofxSCSynth("sine");
+        synth = new ofxSCSynth("simple_sine");
         synth->set("freq", soundSpeed * 50);
         synth->set("lfoFreq", lfo);
         synth->set("amp", 0);
@@ -44,6 +41,7 @@ void testApp::draw(){
 void testApp::exit(){
     // Free synth
     synth->free();
+    sc.SCexit();
 }
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
